@@ -47,8 +47,8 @@ services:
     image: redis:latest
   nginx:
     build:
-      dockerfile: Dockerfile.nginx
-      context: .
+      dockerfile: Dockerfile.dev
+      context: ./nginx
     restart: always
     ports:
       - '4000:80'
